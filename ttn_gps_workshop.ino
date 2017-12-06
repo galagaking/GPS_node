@@ -59,7 +59,7 @@
     alt = altValue;
   }
 var hdop = b[8] / 10.0;
-var airpressure = 970+((b[9] >> 2) & 0x3F);
+var airpressure = 970+((b[10] >> 2) & 0x3F);
 var temperature = (-2400+6.25*(((b[10] & 0x03) << 8) | b[9]))/100.0; 
 return {
 lat: lat,
